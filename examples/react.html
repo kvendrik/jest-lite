@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jest Lite</title>
+</head>
+<body>
+
+  <script type="module">
+    import * as jestLite from '../dist/jest-lite.js';
+
+    console.log(jestLite);
+
+    window.jestLite.onMessage((message) => {
+      console.log(message)
+    });
+
+    (({describe, test, expect, mount}) => {
+      function Button() {
+        return React.createElement('div', null, 'Hello!');
+      }
+
+      describe('describe', () => {
+        test('one', () => {
+          const wrapper = mount(React.createElement(Button, {}, null));
+          expect(wrapper.text()).toBe('Hello!');
+        });
+      });
+    })(window.jestLite.testUtilities);
+
+    window.jestLite.runTests();
+  </script>
+</body>
+</html>
