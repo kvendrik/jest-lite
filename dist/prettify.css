@@ -8,10 +8,13 @@
 
   width: 100%;
   height: 100%;
-  font: 300 16px 'Monaco';
+
+  font: 100% Consolas, Monaco, monospace;
   padding: var(--spacing);
+
   background: var(--color-base);
   color: white;
+
   box-sizing: border-box;
   line-height: 1.5em;
 }

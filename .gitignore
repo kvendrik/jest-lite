@@ -1,5 +1,5 @@
 .cache
 .rpt2_cache
 node_modules
-dist/*.js
+dist/*[.js, .ts]
 yarn-error.log

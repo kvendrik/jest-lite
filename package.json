@@ -23,14 +23,14 @@
   "author": "Koen Vendrik <k.vendrik@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@jest/types": "^24.8.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest-circus": "22.1.4",
     "jest-matchers": "^20.0.3",
     "jest-mock": "^24.8.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "@jest/types": "^24.8.0"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.1",

@@ -8,6 +8,7 @@ export function toHTML(
   node: HTMLElement,
 ) {
   const element = document.createElement('div');
+  element.className = 'jest-lite-result';
   node.appendChild(element);
   element.innerHTML = 'Running tests...';
   testRunner.then(result => {
@@ -39,15 +40,13 @@ function constructResultsHTML(result: Circus.TestResults) {
     '',
   );
   return `
-    <div class="jest-lite-result">
-      ${testsResultsHTML}
-      ${constructSummaryHTML(
-        failed > 0 ? 'fail' : 'pass',
-        failed,
-        passed,
-        totalDuration,
-      )}
-    </div>
+    ${testsResultsHTML}
+    ${constructSummaryHTML(
+      failed > 0 ? 'fail' : 'pass',
+      failed,
+      passed,
+      totalDuration,
+    )}
   `;
 }
 

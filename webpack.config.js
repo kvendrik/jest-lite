@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'production',
   entry: {
     core: './src/core.ts',
     enzyme: './src/enzyme.ts',
@@ -19,31 +20,31 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js'],
   },
   output: {
-		path: path.join(__dirname, 'dist'),
-		filename: '[name].js',
-		library: ['jestLite', '[name]'],
-		libraryTarget: 'umd'
-	},
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].js',
+    library: ['jestLite', '[name]'],
+    libraryTarget: 'umd',
+  },
   externals: {
     lodash: {
       commonjs: 'react',
       commonjs2: 'react',
       amd: 'lodash',
-      root: 'React'
+      root: 'React',
     },
     reactDOM: {
       commonjs: 'react-dom',
       commonjs2: 'react-dom',
       amd: 'react-dom',
-      root: 'ReactDOM'
-    }
-  }
+      root: 'ReactDOM',
+    },
+  },
 };
