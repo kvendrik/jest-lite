@@ -1,0 +1,61 @@
+{
+  "extends": ["tslint:recommended", "tslint:latest"],
+  "rules": {
+    "arrow-parens": false,
+    "arrow-return-shorthand": [false],
+    "comment-format": [true, "check-space"],
+    "import-blacklist": [true, "rxjs"],
+    "interface-over-type-literal": false,
+    "interface-name": false,
+    "max-line-length": false,
+    "member-access": false,
+    "member-ordering": [true, {"order": "fields-first"}],
+    "newline-before-return": false,
+    "no-any": false,
+    "no-empty-interface": false,
+    "no-empty": false,
+    "no-inferrable-types": [true, "ignore-params", "ignore-properties"],
+    "no-invalid-this": [true, "check-function-in-method"],
+    "no-null-keyword": false,
+    "no-require-imports": false,
+    "no-this-assignment": [true, {"allow-destructuring": true}],
+    "no-trailing-whitespace": true,
+    "object-literal-sort-keys": false,
+    "object-literal-shorthand": false,
+    "one-variable-per-declaration": [false],
+    "only-arrow-functions": [true, "allow-declarations"],
+    "ordered-imports": [false],
+    "prefer-method-signature": false,
+    "prefer-template": [true, "allow-single-concat"],
+    "quotemark": [true, "single"],
+    "semicolon": [true, "always"],
+    "trailing-comma": [
+      true,
+      {
+        "singleline": "never",
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "always",
+          "typeLiterals": "ignore"
+        },
+        "esSpecCompliant": true
+      }
+    ],
+    "triple-equals": [true, "allow-null-check"],
+    "type-literal-delimiter": true,
+    "typedef": [true, "parameter", "property-declaration"],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ],
+    "no-import-side-effect": false,
+    "no-submodule-imports": false,
+    // turned off as it does not support the tsconfig.paths config option
+    "no-implicit-dependencies": false,
+    "no-object-literal-type-assertion": false
+  }
+}

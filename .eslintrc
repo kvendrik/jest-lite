@@ -1,0 +1,12 @@
+{
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "import/prefer-default-export": "off",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off"
+  },
+  "env": {
+    "browser": true
+  }
+}

@@ -1,31 +1,53 @@
 {
   "name": "jest-lite",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "Run Jest in the browser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kvendrik/jest-lite.git"
+  },
+  "keywords": [
+    "jest",
+    "browser"
+  ],
   "main": "build/core.js",
   "types": "build/core.d.ts",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "yarn lint:ts && yarn lint:tslint && yarn lint:eslint",
+    "lint:ts": "tsc --noEmit",
+    "lint:eslint": "eslint src/**/*.ts --ext .ts",
+    "lint:tslint": "tslint -c tslint.json --project tsconfig.json 'src/**/*.ts'"
   },
   "author": "Koen Vendrik <k.vendrik@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@jest/types": "^24.8.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest-circus": "22.1.4",
     "jest-matchers": "^20.0.3",
     "jest-mock": "^24.8.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "@jest/types": "^24.8.0"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.1",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest-matchers": "^20.0.2",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
     "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2",
     "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
     "typescript": "^3.5.2",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
