@@ -6,8 +6,8 @@ Run [Jest](https://jestjs.io/) in the browser
 
 [Codesandbox](https://codesandbox.io) allows you to write Jest and execute the tests right in their environment which [took a bit of engineering](https://github.com/codesandbox/codesandbox-client/issues/364) to get right as Jest is typically meant to be ran in a Node environment. They however didn't open-source their solution so I decided to write my own for two reasons:
 
-- Create an easy way to use Jest in **any** sandboxing environment.
-- Give code sandbox maintainers an easy way to allow users to write Jest in their own code sandbox solution.
+- Create an easy way to use Jest in _any_ sandboxing environment.
+- Give code sandbox maintainers an easy way to allow users to write Jest in their code sandboxing solution.
 
 ## Modules
 
@@ -20,12 +20,12 @@ This library consists of three seperate modules which extend eachother's functio
 
 ### `enzyme`
 
-- Usage: `import * as core from 'jest-lite/build/enzyme';` or `http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/enzyme.js`
-- Description: includes all testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts) for a full list of exports.
+- Usage: `import * as enzyme from 'jest-lite/build/enzyme';` or `http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/enzyme.js`
+- Description: includes testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts) for a full list of exports.
 
 ### `prettify`
 
-- Usage: `import * as core from 'jest-lite/build/prettify';` or `http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/prettify.js`
+- Usage: `import * as prettify from 'jest-lite/build/prettify';` or `http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/prettify.js`
 - Description: the `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts) for a full list of exports.
 
 ## Examples
@@ -58,7 +58,7 @@ Trying pasting this in a [Codepen](https://codepen.io/pen/) and watch magic happ
   html,
   body {
     margin: 0;
-    height: 0;
+    height: 100%;
   }
 </style>
 <link
