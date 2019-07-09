@@ -11,6 +11,7 @@
   "author": "Koen Vendrik <k.vendrik@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@jest/types": "^24.8.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest-circus": "22.1.4",

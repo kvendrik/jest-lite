@@ -22,7 +22,27 @@ This library consists of three seperate modules which extend eachother's functio
 - Usage: `import * as core from 'jest-lite/build/prettify';` or `http://unpkg.com/jest-lite@1.0.0/build/prettify.js`
 - Description: the `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page.
 
-## Example
+## Examples
+
+### Basic Usage (CJS)
+```ts
+import {describe, it, expect, run} from 'jest-lite';
+
+function sum(x: number, y: number) {
+  return x + y;
+}
+
+describe('sum', () => {
+  it('adds the two given numbers', () => {
+    expect(sum(2, 2)).toBe(4);
+  });
+});
+
+const result = await run();
+console.log(result);
+```
+
+### Testing React and Prettifying Output (UMD)
 ```html
 <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="http://unpkg.com/jest-lite@1.0.0/build/core.js"></script>
@@ -38,6 +58,9 @@ This library consists of three seperate modules which extend eachother's functio
   describe('<Button />', () => {
     it('renders children', () => {
       const text = 'Click me!';
+      // If you're using a transpiler like Babel
+      // React.createElement would be replaced with your JSX:
+      // <Button>{text}</Button>
       const button = mount(React.createElement(Button, {}, text));
       expect(button.text()).toBe(text);
     });
