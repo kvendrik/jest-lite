@@ -1,6 +1,6 @@
 {
   "name": "jest-lite",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Run Jest in the browser",
   "repository": {
     "type": "git",
@@ -52,5 +52,8 @@
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
