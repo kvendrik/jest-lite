@@ -2,10 +2,11 @@
   "name": "jest-lite",
   "version": "1.0.0",
   "description": "Run Jest in the browser",
-  "main": "build/jest-lite.js",
+  "main": "build/core.js",
+  "types": "build/core.d.ts",
   "scripts": {
-    "server": "python -m SimpleHTTPServer 3000",
-    "build": "node build.js"
+    "dev": "webpack-dev-server",
+    "build": "webpack"
   },
   "author": "Koen Vendrik <k.vendrik@gmail.com>",
   "license": "MIT",
@@ -13,27 +14,20 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "jest-circus": "22.1.4",
-    "jest-diff": "^24.8.0",
-    "jest-matcher-utils": "^24.8.0",
     "jest-matchers": "^20.0.3",
+    "jest-mock": "^24.8.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  },
-  "resolutions": {
-    "@babel/parser": "7.3.0"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.1",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest-matchers": "^20.0.2",
     "parcel-bundler": "^1.12.3",
-    "rollup": "^1.16.6",
-    "rollup-plugin-commonjs": "^10.0.1",
-    "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-node-globals": "^1.4.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-typescript": "^1.0.1",
-    "tslib": "^1.10.0",
-    "typescript": "^3.5.2"
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
   }
 }

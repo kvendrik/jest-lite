@@ -2,5 +2,9 @@
   "compilerOptions": {
     "noImplicitAny": true,
     "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
   },
 }
