@@ -16,17 +16,17 @@ This library consists of three seperate modules which extend eachother's functio
 ### `core`
 
 - Usage: `import * as core from 'jest-lite';` or `http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/core.js`
-- Description: includes all core testing utilities. See [the source]() for a full list.
+- Description: includes all core testing utilities. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts) for a full list of exports.
 
 ### `enzyme`
 
 - Usage: `import * as core from 'jest-lite/build/enzyme';` or `http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/enzyme.js`
-- Description: includes all testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). See [the source]() for a full list.
+- Description: includes all testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts) for a full list of exports.
 
 ### `prettify`
 
 - Usage: `import * as core from 'jest-lite/build/prettify';` or `http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/prettify.js`
-- Description: the `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page.
+- Description: the `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts) for a full list of exports.
 
 ## Examples
 
@@ -51,7 +51,16 @@ console.log(result);
 
 ### Testing React and Prettifying Output (UMD)
 
+Trying pasting this in a [Codepen](https://codepen.io/pen/) and watch magic happen. ✨
+
 ```html
+<style>
+  html,
+  body {
+    margin: 0;
+    height: 0;
+  }
+</style>
 <link
   rel="stylesheet"
   href="http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/prettify.css"
