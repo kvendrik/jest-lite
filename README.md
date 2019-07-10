@@ -42,7 +42,7 @@ The `core` module spits out the test results in JSON format. This module gives y
 
 ### Basic Usage (NPM)
 
-Check out this example in [RunKit](https://runkit.com/embed/6u361dpz17bh).
+Check out this example on [RunKit](https://runkit.com/embed/6u361dpz17bh).
 
 ```ts
 import {describe, it, expect, run} from 'jest-lite';
@@ -63,7 +63,7 @@ console.log(result);
 
 ### Testing React and Prettifying Output (CDN)
 
-Check out this example in [Codepen](https://codepen.io/kvendrik/pen/ormPMM?editors=1000).
+Check out this example on [Codepen](https://codepen.io/kvendrik/pen/ormPMM?editors=1000).
 
 ```html
 <style>
