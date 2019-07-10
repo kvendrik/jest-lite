@@ -7,10 +7,12 @@ Run [Jest](https://jestjs.io/) in the browser.
 
 ## Why run Jest in the browser?
 
-[Codesandbox](https://codesandbox.io) allows you to write Jest and execute the tests right in their environment which [took a bit of engineering](https://github.com/codesandbox/codesandbox-client/issues/364) to get right as Jest is typically meant to be ran in a Node environment. They however didn't open-source their solution so I decided to write my own for two reasons:
+[Codesandbox](https://codesandbox.io) allows you to write Jest and execute the tests right in their environment. Getting this to work [took a bit of research](https://github.com/codesandbox/codesandbox-client/issues/364) as Jest is typically meant to be ran in a Node environment.
+
+The Codesandbox team however didn't open-source their solution so I decided to write my own, for two reasons:
 
 - Create an easy way to use Jest in _any_ sandboxing environment.
-- Give code sandbox maintainers an easy way to allow users to write Jest in their code sandboxing solution.
+- Give code sandbox maintainers a bare-bone example that shows how you can implement Jest testing into your code sandboxing solution.
 
 ## Modules
 
