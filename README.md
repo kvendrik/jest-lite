@@ -19,25 +19,32 @@ The Codesandbox team however didn't open-source their solution so I decided to w
 This library consists of three seperate modules which extend eachother's functionality:
 
 ### `core`
+All core testing utilities. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts) for a full list of exports.
 
-- Usage: `import * as core from 'jest-lite';` or `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/core.js`
-- Description: includes all core testing utilities. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts) for a full list of exports.
+- NPM: `import * as core from 'jest-lite';`
+- CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/core.js`
 
 ### `enzyme`
+Testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts) for a full list of exports.
 
-- Usage: `import * as enzyme from 'jest-lite/build/enzyme';` or `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/enzyme.js`
-- Description: includes testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts) for a full list of exports.
+- NPM: `import * as enzyme from 'jest-lite/build/enzyme';`
+- CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/enzyme.js`
 
 ### `prettify`
+The `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts) for a full list of exports.
 
-- Usage:
-  - JS: `import * as prettify from 'jest-lite/build/prettify';` or `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.js`
-  - Styles: `node_modules/jest-lite/dist/prettify.css` or `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.css`
-- Description: the `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts) for a full list of exports.
+- JS:
+  - NPM: `import * as prettify from 'jest-lite/build/prettify';`
+  - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.js`
+- Styles: 
+  - NPM: `node_modules/jest-lite/dist/prettify.css`
+  - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.css`
 
 ## Examples
 
-### Basic Usage (CJS)
+### Basic Usage (NPM)
+
+Check out this example on [RunKit](https://runkit.com/embed/6u361dpz17bh).
 
 ```ts
 import {describe, it, expect, run} from 'jest-lite';
@@ -56,9 +63,9 @@ const result = await run();
 console.log(result);
 ```
 
-### Testing React and Prettifying Output (UMD)
+### Testing React and Prettifying Output (CDN)
 
-Trying pasting this in a [Codepen](https://codepen.io/pen/) and watch magic happen. ✨
+Check out this example on [Codepen](https://codepen.io/kvendrik/pen/ormPMM?editors=1000).
 
 ```html
 <style>
