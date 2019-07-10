@@ -33,18 +33,4 @@ module.exports = {
     library: ['jestLite', '[name]'],
     libraryTarget: 'umd',
   },
-  externals: {
-    lodash: {
-      commonjs: 'react',
-      commonjs2: 'react',
-      amd: 'lodash',
-      root: 'React',
-    },
-    reactDOM: {
-      commonjs: 'react-dom',
-      commonjs2: 'react-dom',
-      amd: 'react-dom',
-      root: 'ReactDOM',
-    },
-  },
 };

@@ -1,6 +1,9 @@
 # jest-lite
 
-Run [Jest](https://jestjs.io/) in the browser
+[![NPM Version](https://badge.fury.io/js/jest-lite.svg)](https://yarnpkg.com/en/package/jest-lite)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Run [Jest](https://jestjs.io/) in the browser.
 
 ## Why run Jest in the browser?
 
@@ -15,17 +18,17 @@ This library consists of three seperate modules which extend eachother's functio
 
 ### `core`
 
-- Usage: `import * as core from 'jest-lite';` or `http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/core.js`
+- Usage: `import * as core from 'jest-lite';` or `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/core.js`
 - Description: includes all core testing utilities. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts) for a full list of exports.
 
 ### `enzyme`
 
-- Usage: `import * as enzyme from 'jest-lite/build/enzyme';` or `http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/enzyme.js`
+- Usage: `import * as enzyme from 'jest-lite/build/enzyme';` or `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/enzyme.js`
 - Description: includes testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts) for a full list of exports.
 
 ### `prettify`
 
-- Usage: `import * as prettify from 'jest-lite/build/prettify';` or `http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/prettify.js`
+- Usage: `import * as prettify from 'jest-lite/build/prettify';` or `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.js`
 - Description: the `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts) for a full list of exports.
 
 ## Examples
@@ -63,7 +66,7 @@ Trying pasting this in a [Codepen](https://codepen.io/pen/) and watch magic happ
 </style>
 <link
   rel="stylesheet"
-  href="http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/prettify.css"
+  href="http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.css"
 />
 <script
   crossorigin
@@ -71,15 +74,15 @@ Trying pasting this in a [Codepen](https://codepen.io/pen/) and watch magic happ
 ></script>
 <script
   crossorigin
-  src="http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/core.js"
+  src="http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/core.js"
 ></script>
 <script
   crossorigin
-  src="http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/enzyme.js"
+  src="http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/enzyme.js"
 ></script>
 <script
   crossorigin
-  src="http://unpkg.com/jest-lite@1.0.0-alpha.2/dist/prettify.js"
+  src="http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.js"
 ></script>
 <script>
   const {
