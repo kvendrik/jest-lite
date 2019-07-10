@@ -4,5 +4,11 @@
   "files.trimTrailingWhitespace": true,
   "editor.formatOnSave": true,
   "prettier.eslintIntegration": true,
-  "eslint.validate": ["javascript", "typescript"]
+  "eslint.validate": ["javascript", "typescript"],
+  "files.exclude": {
+    "**/.cache": true,
+    "**/.rpt2_cache": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  }
 }

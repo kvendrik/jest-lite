@@ -1,23 +1,28 @@
 const fs = require('fs');
 const {resolve} = require('path');
 
-const rootPath = resolve(__dirname, '..');
-const package = require(`${rootPath}/package.json`);
+const package = require(`../package.json`);
 
-const [,,newVersion] = process.argv;
+const [, , newVersion] = process.argv;
 
 if (!newVersion) {
+  // eslint-disable-next-line no-console
   console.error('Usage: update-version [new-version]');
   process.exit(1);
 }
 
+const rootPath = resolve(__dirname, '..');
 const {version: currentVersion} = package;
-console.log(`Changing version from ${currentVersion} to ${newVersion} in README.md and package.json`);
+
+// eslint-disable-next-line no-console
+console.info(
+  `Changing version from ${currentVersion} to ${newVersion} in README.md and package.json`,
+);
 
 const currentReadmeContents = fs.readFileSync(`${rootPath}/README.md`, 'utf-8');
 const newReadmeContents = currentReadmeContents.replace(
   new RegExp(currentVersion, 'g'),
-  newVersion
+  newVersion,
 );
 fs.writeFileSync(`${rootPath}/README.md`, newReadmeContents);
 
