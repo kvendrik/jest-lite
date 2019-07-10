@@ -16,14 +16,14 @@ Run [Jest](https://jestjs.io/) in the browser.
 
 This library consists of three seperate modules which extend eachother's functionality:
 
-### `core`
+### `core` (`79kb` gzipped)
 
 All core testing utilities. ([source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts))
 
 - NPM: `import * as core from 'jest-lite';`
 - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js`
 
-### `enzyme`
+### `enzyme` (`180kb` gzipped)
 
 Testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). ([source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts))
 
@@ -36,10 +36,10 @@ To be able to use this module you will need to include [your preferred version o
 
 The `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. ([source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts))
 
-- JS:
+- `prettify.js` (`37kb` gzipped)
   - NPM: `import * as prettify from 'jest-lite/build/prettify';`
   - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js`
-- Styles:
+- `prettify.css` (`376b` gzipped)
   - NPM: `node_modules/jest-lite/dist/prettify.css`
   - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css`
 

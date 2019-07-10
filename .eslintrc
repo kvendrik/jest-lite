@@ -4,7 +4,8 @@
   "rules": {
     "import/prefer-default-export": "off",
     "no-unused-vars": "off",
-    "no-use-before-define": "off"
+    "no-use-before-define": "off",
+    "no-restricted-syntax": "off"
   },
   "env": {
     "browser": true

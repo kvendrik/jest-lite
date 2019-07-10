@@ -19,7 +19,7 @@
     "lint:ts": "tsc --noEmit",
     "lint:eslint": "eslint src/**/*.ts --ext .ts",
     "lint:tslint": "tslint -c tslint.json --project tsconfig.json 'src/**/*.ts'",
-    "update-version": "node scripts/update-version.js"
+    "update-readme": "node scripts/update-version.js && node scripts/update-bundle-sizes.js"
   },
   "author": "Koen Vendrik <k.vendrik@gmail.com>",
   "license": "MIT",
@@ -45,6 +45,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2",
+    "gzip-size": "^5.1.1",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
     "ts-loader": "^6.0.4",
