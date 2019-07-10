@@ -47,7 +47,7 @@ The `core` module spits out the test results in JSON format. This module gives y
 
 ### Basic Usage (NPM)
 
-Check out this example on [RunKit](https://runkit.com/embed/6u361dpz17bh).
+Check out this example on [RunKit](https://runkit.com/embed/aqlmbjboctrk).
 
 ```ts
 import {describe, it, expect, run} from 'jest-lite';
