@@ -23,30 +23,30 @@ This library consists of three seperate modules which extend eachother's functio
 
 ### `core`
 
-All core testing utilities. ([source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts)) (`79kb` gzipped)
+All core testing utilities. ([source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts)) (`{{bundleSize['core.js']}}` gzipped)
 
 - NPM: `import * as core from 'jest-lite';`
-- CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js`
+- CDN: `http://unpkg.com/jest-lite@{{version}}/dist/core.js`
 
 ### `enzyme`
 
-Testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). ([source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts)) (`180kb` gzipped)
+Testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). ([source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts)) (`{{bundleSize['enzyme.js']}}` gzipped)
 
 To be able to use this module you will need to include [your preferred version of React and ReactDOM](https://reactjs.org/docs/cdn-links.html).
 
 - NPM: `import * as enzyme from 'jest-lite/build/enzyme';`
-- CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/enzyme.js`
+- CDN: `http://unpkg.com/jest-lite@{{version}}/dist/enzyme.js`
 
 ### `prettify`
 
 The `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. ([source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts))
 
-- `prettify.js` (`37kb` gzipped)
+- `prettify.js` (`{{bundleSize['prettify.js']}}` gzipped)
   - NPM: `import * as prettify from 'jest-lite/build/prettify';`
-  - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js`
-- `prettify.css` (`376b` gzipped)
+  - CDN: `http://unpkg.com/jest-lite@{{version}}/dist/prettify.js`
+- `prettify.css` (`{{bundleSize['prettify.css']}}` gzipped)
   - NPM: `node_modules/jest-lite/dist/prettify.css`
-  - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css`
+  - CDN: `http://unpkg.com/jest-lite@{{version}}/dist/prettify.css`
 
 ## Examples
 
@@ -85,7 +85,7 @@ Check out this example on [Codepen](https://codepen.io/kvendrik/pen/ormPMM?edito
 </style>
 <link
   rel="stylesheet"
-  href="http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css"
+  href="http://unpkg.com/jest-lite@{{version}}/dist/prettify.css"
 />
 <script
   crossorigin
@@ -97,15 +97,15 @@ Check out this example on [Codepen](https://codepen.io/kvendrik/pen/ormPMM?edito
 ></script>
 <script
   crossorigin
-  src="http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js"
+  src="http://unpkg.com/jest-lite@{{version}}/dist/core.js"
 ></script>
 <script
   crossorigin
-  src="http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/enzyme.js"
+  src="http://unpkg.com/jest-lite@{{version}}/dist/enzyme.js"
 ></script>
 <script
   crossorigin
-  src="http://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js"
+  src="http://unpkg.com/jest-lite@{{version}}/dist/prettify.js"
 ></script>
 <script>
   const {
