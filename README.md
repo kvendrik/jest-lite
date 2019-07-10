@@ -142,3 +142,9 @@ Check out this example on [Codepen](https://codepen.io/kvendrik/pen/ormPMM?edito
   prettify.toHTML(run(), document.body);
 </script>
 ```
+
+## 🏗 Contributing
+
+1.  Make your changes and debug them using the examples (`yarn dev`).
+1.  Lint your changes using `yarn lint`.
+1.  Create a PR.
