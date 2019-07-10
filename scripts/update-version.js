@@ -12,7 +12,7 @@ if (!newVersion) {
 }
 
 const {version: currentVersion} = package;
-console.log(`Changeing version from ${currentVersion} to ${newVersion} in README.md and package.json`);
+console.log(`Changing version from ${currentVersion} to ${newVersion} in README.md and package.json`);
 
 const currentReadmeContents = fs.readFileSync(`${rootPath}/README.md`, 'utf-8');
 const newReadmeContents = currentReadmeContents.replace(
