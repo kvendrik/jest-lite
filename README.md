@@ -5,38 +5,39 @@
 
 Run [Jest](https://jestjs.io/) in the browser.
 
-## Why run Jest in the browser?
+## Why create this?
 
-[Codesandbox](https://codesandbox.io) allows you to write Jest and execute the tests right in their environment. Getting this to work [took a bit of research](https://github.com/codesandbox/codesandbox-client/issues/364) as Jest is typically meant to be ran in a Node environment.
-
-The Codesandbox team however didn't open-source their solution so I decided to write my own, for two reasons:
+[Codesandbox](https://codesandbox.io) allows you to write Jest and execute the tests right in their environment. Getting this to work [took a bit of research](https://github.com/codesandbox/codesandbox-client/issues/364) as Jest is typically meant to be ran in a Node environment. The Codesandbox team however didn't open-source their solution so I decided to write my own, for two reasons:
 
 - Create an easy way to use Jest in _any_ sandboxing environment.
-- Give code sandbox maintainers a bare-bone example that shows how you can implement Jest testing into your code sandboxing solution.
+- Give code sandbox maintainers a bare-bone example that shows how you can implement Jest testing into your own code sandboxing solution.
 
 ## Modules
 
 This library consists of three seperate modules which extend eachother's functionality:
 
 ### `core`
-All core testing utilities. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts) for a full list of exports.
+
+All core testing utilities. ([source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts)).
 
 - NPM: `import * as core from 'jest-lite';`
 - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/core.js`
 
 ### `enzyme`
-Testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts) for a full list of exports.
+
+Testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). ([source](https://github.com/kvendrik/jest-lite/blob/master/src/enzyme.ts))
 
 - NPM: `import * as enzyme from 'jest-lite/build/enzyme';`
 - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/enzyme.js`
 
 ### `prettify`
-The `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts) for a full list of exports.
+
+The `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. ([source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts))
 
 - JS:
   - NPM: `import * as prettify from 'jest-lite/build/prettify';`
   - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.js`
-- Styles: 
+- Styles:
   - NPM: `node_modules/jest-lite/dist/prettify.css`
   - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.css`
 
