@@ -18,7 +18,7 @@ This library consists of three seperate modules which extend eachother's functio
 
 ### `core`
 
-All core testing utilities. ([source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts)).
+All core testing utilities. ([source](https://github.com/kvendrik/jest-lite/blob/master/src/core.ts))
 
 - NPM: `import * as core from 'jest-lite';`
 - CDN: `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/core.js`

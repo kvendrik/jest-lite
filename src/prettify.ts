@@ -69,22 +69,22 @@ function constructResultHTML(
   testPath: string[],
   errors: string[],
 ) {
+  const statusIcon = status === 'fail' ? '×' : '✓';
+  let errorsWrapperHTML = '';
+
+  if (errors.length > 0) {
+    const errorsHTML = errors.map(error => escapeHTML(error)).join();
+    errorsWrapperHTML = `<div class="jest-lite-result__errors">${errorsHTML}</div>`;
+  }
+
   return `
     <div class="jest-lite-result__result">
-      <span class="jest-lite-result__status-icon">${
-        status === 'fail' ? '×' : '✓'
-      }</span>
+      <span class="jest-lite-result__status-icon">${statusIcon}</span>
       <span class="jest-lite-result__status jest-lite-result__status--${status}">
         ${status.toUpperCase()}
       </span>
       ${cleanTestPath(testPath).join(' › ')}
-      ${
-        errors.length === 0
-          ? ''
-          : `<div class="jest-lite-result__errors">${errors
-              .map(error => escapeHTML(error))
-              .join()}</div>`
-      }
+      ${errorsWrapperHTML}
     </div>
   `;
 }
