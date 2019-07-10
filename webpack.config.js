@@ -20,6 +20,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
+        sideEffects: false,
         exclude: /node_modules/,
       },
     ],
@@ -32,5 +33,9 @@ module.exports = {
     filename: '[name].js',
     library: ['jestLite', '[name]'],
     libraryTarget: 'umd',
+  },
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM',
   },
 };
