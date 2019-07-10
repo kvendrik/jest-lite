@@ -28,7 +28,9 @@ This library consists of three seperate modules which extend eachother's functio
 
 ### `prettify`
 
-- Usage: `import * as prettify from 'jest-lite/build/prettify';` or `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.js`
+- Usage:
+  - JS: `import * as prettify from 'jest-lite/build/prettify';` or `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.js`
+  - Styles: `node_modules/jest-lite/dist/prettify.css` or `http://unpkg.com/jest-lite@1.0.0-alpha.3/dist/prettify.css`
 - Description: the `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. See [the source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts) for a full list of exports.
 
 ## Examples
