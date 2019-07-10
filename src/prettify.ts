@@ -8,7 +8,7 @@ export function toHTML(
   node: HTMLElement,
 ) {
   const element = document.createElement('div');
-  element.className = 'jest-lite-result';
+  element.className = 'jest-lite-report';
   node.appendChild(element);
   element.innerHTML = 'Running tests...';
   testRunner.then(result => {
@@ -57,7 +57,7 @@ function constructSummaryHTML(
   timeInMilliseconds: number,
 ) {
   return `
-    <span class="summary-status summary-status--${status}">
+    <span class="jest-lite-report__summary-status jest-lite-report__summary-status--${status}">
       Tests: ${failed} failed, ${passed} passed, ${passed + failed} total<br>
       Time: ${timeInMilliseconds / 1000}s
     </span>
@@ -74,13 +74,13 @@ function constructResultHTML(
 
   if (errors.length > 0) {
     const errorsHTML = errors.map(error => escapeHTML(error)).join();
-    errorsWrapperHTML = `<div class="jest-lite-result__errors">${errorsHTML}</div>`;
+    errorsWrapperHTML = `<div class="jest-lite-report__errors">${errorsHTML}</div>`;
   }
 
   return `
-    <div class="jest-lite-result__result">
-      <span class="jest-lite-result__status-icon">${statusIcon}</span>
-      <span class="jest-lite-result__status jest-lite-result__status--${status}">
+    <div class="jest-lite-report__result">
+      <span class="jest-lite-report__status-icon">${statusIcon}</span>
+      <span class="jest-lite-report__status jest-lite-report__status--${status}">
         ${status.toUpperCase()}
       </span>
       ${cleanTestPath(testPath).join(' › ')}
