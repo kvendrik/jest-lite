@@ -34,7 +34,7 @@ Testing utilities for testing with [Enzyme](https://github.com/airbnb/enzyme). (
 
 To be able to use this module you will need to include [your preferred version of React and ReactDOM](https://reactjs.org/docs/cdn-links.html).
 
-- NPM: `import * as enzyme from 'jest-lite/build/enzyme';`
+- NPM: `import * as enzyme from 'jest-lite/dist/enzyme';`
 - CDN: `http://unpkg.com/jest-lite@{{version}}/dist/enzyme.js`
 
 ### `prettify`
@@ -42,7 +42,7 @@ To be able to use this module you will need to include [your preferred version o
 The `core` module spits out the test results in JSON format. This module gives you an easy way to prettify that output for use on a HTML page. ([source](https://github.com/kvendrik/jest-lite/blob/master/src/prettify.ts))
 
 - `prettify.js` (`{{bundleSize['prettify.js']}}` gzipped)
-  - NPM: `import * as prettify from 'jest-lite/build/prettify';`
+  - NPM: `import * as prettify from 'jest-lite/dist/prettify';`
   - CDN: `http://unpkg.com/jest-lite@{{version}}/dist/prettify.js`
 - `prettify.css` (`{{bundleSize['prettify.css']}}` gzipped)
   - NPM: `node_modules/jest-lite/dist/prettify.css`
@@ -142,3 +142,9 @@ Check out this example on [Codepen](https://codepen.io/kvendrik/pen/ormPMM?edito
   prettify.toHTML(run(), document.body);
 </script>
 ```
+
+## 🏗 Contributing
+
+1.  Make your changes and debug them using the examples (`yarn dev`).
+1.  Lint your changes using `yarn lint`.
+1.  Create a PR.
