@@ -11,7 +11,7 @@
 
 Run [Jest](https://jestjs.io/) in the browser.
 
-<img src="https://github.com/kvendrik/jest-lite/raw/master/preview.jpg" width="100%" />
+[<img src="https://github.com/kvendrik/jest-lite/raw/master/preview.jpg" width="100%" />](https://codepen.io/kvendrik/pen/ormPMM)
 
 ## Why create this?
 
