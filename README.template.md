@@ -5,6 +5,7 @@
 
 # jest-lite
 
+[![CircleCI](https://circleci.com/gh/kvendrik/jest-lite.svg?style=svg)](https://circleci.com/gh/kvendrik/jest-lite)
 [![NPM Version](https://badge.fury.io/js/jest-lite.svg)](https://yarnpkg.com/en/package/jest-lite)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
