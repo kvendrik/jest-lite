@@ -11,6 +11,8 @@
 
 Run [Jest](https://jestjs.io/) in the browser.
 
+<img src="https://github.com/kvendrik/jest-lite/raw/master/preview.jpg" width="100%" />
+
 ## Why create this?
 
 [Codesandbox](https://codesandbox.io) allows you to write Jest and execute the tests right in their environment. Getting this to work [took a bit of research](https://github.com/codesandbox/codesandbox-client/issues/364) as Jest is typically meant to be ran in a Node environment. The Codesandbox team however didn't open-source their solution so I decided to write my own, for two reasons:
