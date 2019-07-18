@@ -11,7 +11,7 @@
 
 Run [Jest](https://jestjs.io/) in the browser.
 
-[<img src="https://github.com/kvendrik/jest-lite/raw/master/preview.jpg" width="100%" />](https://codepen.io/kvendrik/pen/ormPMM)
+[<img src="https://github.com/kvendrik/jest-lite/raw/master/preview.png" width="100%" />](https://codepen.io/kvendrik/pen/QeWLMV)
 
 ## Why create this?
 
@@ -76,7 +76,7 @@ console.log(result);
 
 ### Testing React and Prettifying Output (CDN)
 
-Check out this example on [Codepen](https://codepen.io/kvendrik/pen/ormPMM?editors=1000).
+Check out this example on [Codepen](https://codepen.io/kvendrik/pen/QeWLMV).
 
 ```html
 <style>
