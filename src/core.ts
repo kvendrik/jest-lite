@@ -1,4 +1,4 @@
-import expect from 'jest-matchers';
+import expect from 'expect';
 import jestMock from 'jest-mock';
 import {addEventHandler} from 'jest-circus/build/state';
 import run from 'jest-circus/build/run';

@@ -27,8 +27,8 @@
     "@jest/types": "^24.8.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "expect": "^24.8.0",
     "jest-circus": "22.1.4",
-    "jest-matchers": "^20.0.3",
     "jest-mock": "^24.8.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
@@ -36,7 +36,6 @@
   "devDependencies": {
     "@types/enzyme": "^3.10.1",
     "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/jest-matchers": "^20.0.2",
     "@typescript-eslint/parser": "^1.11.0",
     "eslint": "^6.0.1",
     "eslint-config-airbnb": "^17.1.1",
