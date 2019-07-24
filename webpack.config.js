@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
@@ -15,6 +16,10 @@ module.exports = {
     compress: true,
     port: 9000,
   },
+  node: {
+    fs: 'empty',
+    console: true,
+  },
   module: {
     rules: [
       {
@@ -25,6 +30,16 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      process: {
+        stdout: {
+          isTTY: true,
+        },
+        env: {},
+      },
+    }),
+  ],
   resolve: {
     extensions: ['.ts', '.js'],
   },

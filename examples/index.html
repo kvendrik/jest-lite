@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Jest Lite</title>
-    <link rel="stylesheet" href="/prettify.css" />
-    <style>
-      html,
-      body {
-        margin: 0;
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script src="/core.js"></script>
-    <script src="/enzyme.js"></script>
-    <script src="/prettify.js"></script>
-    <script>
-      const {
-        core: {describe, it, expect, run},
-        enzyme: {mount},
-        prettify,
-      } = window.jestLite;
 
-      function Button({children}) {
-        return React.createElement('button', null, children);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Jest Lite</title>
+  <link rel="stylesheet" href="/prettify.css" />
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+    }
 
-      describe('<Button />', () => {
-        it('renders children', () => {
-          const text = 'Click me!';
-          const button = mount(React.createElement(Button, {}, text));
-          expect(button.text()).toBe(text);
-        });
+  </style>
+</head>
 
-        it('renders as a link', () => {
-          const button = mount(React.createElement(Button, {}, null));
-          expect(button.find('a').exists()).toBe(true);
-        });
+<body>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="/core.js"></script>
+  <script src="/enzyme.js"></script>
+  <script>
+    const {
+      core: {
+        describe,
+        it,
+        expect,
+        run
+      },
+      enzyme: {
+        mount
+      },
+      prettify,
+    } = window.jestLite;
 
-        it('renders as a button', () => {
-          const button = mount(React.createElement(Button, {}, null));
-          expect(button.find('button').exists()).toBe(true);
-        });
+    function Button({
+      children
+    }) {
+      return React.createElement('button', null, children);
+    }
+
+    describe('<Button />', () => {
+      it('renders children', () => {
+        const text = 'Click me!';
+        const button = mount(React.createElement(Button, {}, text));
+        expect(button.text()).toBe(text);
       });
 
-      prettify.toHTML(run(), document.body);
-    </script>
-  </body>
+      it('renders as a link', () => {
+        const button = mount(React.createElement(Button, {}, null));
+        expect(button.find('a').exists()).toBe(true);
+      });
+
+      it('renders as a button', () => {
+        const button = mount(React.createElement(Button, {}, null));
+        expect(button.find('button').exists()).toBe(true);
+      });
+    });
+
+    prettify.toHTML(run(), document.body);
+
+  </script>
+</body>
+
 </html>

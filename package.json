@@ -28,7 +28,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "expect": "^24.8.0",
-    "jest-circus": "22.1.4",
+    "jest-circus": "^24.8.0",
     "jest-mock": "^24.8.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
