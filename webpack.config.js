@@ -18,7 +18,7 @@ module.exports = {
   },
   node: {
     fs: 'empty',
-    console: true,
+    console: 'mock',
   },
   module: {
     rules: [
